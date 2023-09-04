@@ -4,12 +4,8 @@ public class BlueShape : Shape //INHERITANCE
 {
     public new void Start()
     {
-        Color = Color.blue;
+        Color = Color.blue; //ABSTRACTION
+        textToDisplay = "BlueShape class that inheritates from Shape"; //ABSTRACTION
         base.Start(); //ABSTRACTION because you don't know what is doing it just does it
-    }
-    
-    public override string DisplayText() //POLYMORPHISM
-    {
-        return "BlueShape class that inheritates from Shape";
     }
 }
